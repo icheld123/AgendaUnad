@@ -1,146 +1,129 @@
 <!DOCTYPE html>
-<html >
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AGENDA DE EGRESADOS</title>
-        <meta name="description" content="">
-        <link rel="shortcut icon" href="img/calendar.ico" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Noto+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="styles.css">
-        <script src="loadmore.js"></script>
-    </head>
-    <body id="contenedor">
-      <header>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AGENDA DE EGRESADOS: MAYO</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/calendar.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Noto+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="loadmore.js"></script>
+</head>
+
+<body id="contenedor">
+    <header>
         <div id="encabezado">
             <img src="img/logo" alt="Mountain View" id="img">
             <h1 id="h1">AGENDA DE EGRESADOS ZONA AMAZONIA - ORINOQUIA</h1>
         </div>
         <div id="navbar">
-            <a id="a" class="active" href="index.html">Inicio</a>
-            <a href="academicos.html">Eventos Académicos</a>
-            <a href="investigacion.html">Eventos de Investigación</a>
-            <a href="biblioteca.html">Eventos de Biblioteca</a>
+            <div class="navbar">
+                <a href="index.html">Inicio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Eventos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="academicos.html">Eventos Académicos</a>
+                        <a href="investigacion.html">Eventos de Investigación</a>
+                        <a href="biblioteca.html">Eventos de Biblioteca</a>
+                    </div>
+                </div>
+                <a href="https://view.genial.ly/609ff334dc85600d0b61dcd3" target="_blank">Eventos de Bienestar</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbaXSl-wCfIz0Eu3_QMq8b9sBrhtnc3tZWgJpn0uqe6zlKHw/viewform"
+                    target="_blank">Encuesta de Servicios</a>
+                    <a href="https://drive.google.com/file/d/1mnpitREDFdAM8HnUqgQGX1cySzKElWK6/view" target="_blank">Boletín Trimestral</a>
+            </div>
         </div>
-      </header>
+    </header>
     <div id="contenedor">
-    <div id="main">
-        <h3 id="titulo">Estos son los eventos académicos del mes de Junio.</h3>
-        <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <div id="contenedor-anuncios">
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>II Seminario Internacional de Educación Artística en el Piedemonte Amazónico: Escenarios del Conflicto.</p>
-                        <p class="precio">Fecha: 09 a 11 de junio de 2021</p>
-                        <p class="precio">Hora: 08:00 a.m - 08:00 p.m</p>
-                        <a href="https://eventos.unad.edu.co/ii-seminario-internacional-de-educacion-artistica-en-el-piedemonte-amazonico-escenarios-del-conflicto/ii-seminario-internacional-de-educacion-artistica-en-el-piedemonte-amazonico-escenarios-del-conflicto/individual-registration" target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                        <a href="https://www.youtube.com/user/universidadunad" target="_blank" id="botones" class="boton boton-amarillo d-block">Ir a Evento</a>
+        <div id="main">
+            <h3 id="titulo">Estos son los eventos académicos del mes de Junio.</h3>
+            <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
+            <div id="paginacion">
+                <a href="#" class="boton boton-amarillo" id="prev">Anterior</a>
+                <a href="#" class="boton boton-amarillo" id="next">Siguiente</a>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page1">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>II Seminario Internacional de Educación Artística en el Piedemonte Amazónico: Escenarios
+                                del Conflicto.</p>
+                            <p class="precio">Fecha: 09 a 11 de junio de 2021</p>
+                            <p class="precio">Hora: 08:00 a.m - 08:00 p.m</p>
+                            <a href="https://eventos.unad.edu.co/ii-seminario-internacional-de-educacion-artistica-en-el-piedemonte-amazonico-escenarios-del-conflicto/ii-seminario-internacional-de-educacion-artistica-en-el-piedemonte-amazonico-escenarios-del-conflicto/individual-registration"
+                                target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                            <a href="https://www.youtube.com/user/universidadunad" target="_blank" id="botones"
+                                class="boton boton-amarillo d-block">Ir a Evento</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Filosofía más allá de la academia. Filosofía de la tecnología: los videojuegos como
+                                extensión de la existencia</p>
+                            <p class="precio">Fecha: 5 de junio de 2021</p>
+                            <p class="precio">Hora: 11:00a.m - 1:00p.m</p>
+                            <a href="https://www.youtube.com/channel/UCbT3c1AE4cRiqK58CzA_dYQ" target="_blank"
+                                id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Diplomatura: Habilidades socio-emocionales del e-Mediador</p>
+                            <p class="precio">Matrículas: 19 de mayo al 3 de junio de 2021</p>
+                            <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
+                            <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
+                        </div>
                     </div>
                 </div>
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Filosofía más allá de la academia. Filosofía de la tecnología: los videojuegos como extensión de la existencia</p>
-                        <p class="precio">Fecha: 5 de junio de 2021</p>
-                        <p class="precio">Hora: 11:00a.m - 1:00p.m</p>
-                        <a href="https://www.youtube.com/channel/UCbT3c1AE4cRiqK58CzA_dYQ" target="_blank" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page2">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Introducción a la biología evolutiva y didáctica de la biología.</p>
+                            <p class="precio">Fecha: 4 de junio de 2021</p>
+                            <p class="precio">Hora: 3:00 p.m</p>
+                            <a href="https://eventos.unad.edu.co/introduccion-a-la-biologia-evolutiva-y-didactica-de-la-biologia-4-junio/introduccion-a-la-biologia-evolutiva-y-didactica-de-la-biologia-4-junio/individual-registration"
+                                target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Filosofía más allá de la academia. Filosofía de la tecnología: los videojuegos como
+                                extensión de la existencia</p>
+                            <p class="precio">Fecha: 5 de junio de 2021</p>
+                            <p class="precio">Hora: 11:00a.m - 1:00p.m</p>
+                            <a href="https://www.youtube.com/channel/UCbT3c1AE4cRiqK58CzA_dYQ" target="_blank"
+                                id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
+                        </div>
+                    </div>
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <p>Diplomatura: Habilidades socio-emocionales del e-Mediador</p>
+                            <p class="precio">Matrículas: 19 de mayo al 3 de junio de 2021</p>
+                            <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
+                            <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
+                        </div>
                     </div>
                 </div>
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Diplomatura: Habilidades socio-emocionales del e-Mediador</p>
-                        <p class="precio">Matrículas: 19 de mayo al 3 de junio de 2021</p>
-                        <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                        <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                    </div>
-                </div> 
             </div>
-            </div>
-      
-            <div class="item">
-              <div id="contenedor-anuncios">
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Introducción a la biología evolutiva y didáctica de la biología.</p>
-                        <p class="precio">Fecha: 4 de junio de 2021</p>
-                        <p class="precio">Hora: 3:00 p.m</p>
-                        <a href="https://eventos.unad.edu.co/introduccion-a-la-biologia-evolutiva-y-didactica-de-la-biologia-4-junio/introduccion-a-la-biologia-evolutiva-y-didactica-de-la-biologia-4-junio/individual-registration" target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                    </div>
-                </div>
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Filosofía más allá de la academia. Filosofía de la tecnología: los videojuegos como extensión de la existencia</p>
-                        <p class="precio">Fecha: 5 de junio de 2021</p>
-                        <p class="precio">Hora: 11:00a.m - 1:00p.m</p>
-                        <a href="https://www.youtube.com/channel/UCbT3c1AE4cRiqK58CzA_dYQ" target="_blank" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                    </div>
-                </div>
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Diplomatura: Habilidades socio-emocionales del e-Mediador</p>
-                        <p class="precio">Matrículas: 19 de mayo al 3 de junio de 2021</p>
-                        <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                        <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                    </div>
-                </div> 
-            </div>
-            </div>
-          
-            <div class="item">
-              <div id="contenedor-anuncios">
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Introducción a la biología evolutiva y didáctica de la biología.</p>
-                        <p class="precio">Fecha: 4 de junio de 2021</p>
-                        <p class="precio">Hora: 3:00 p.m</p>
-                        <a href="https://eventos.unad.edu.co/introduccion-a-la-biologia-evolutiva-y-didactica-de-la-biologia-4-junio/introduccion-a-la-biologia-evolutiva-y-didactica-de-la-biologia-4-junio/individual-registration" target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                    </div>
-                </div>
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Filosofía más allá de la academia. Filosofía de la tecnología: los videojuegos como extensión de la existencia</p>
-                        <p class="precio">Fecha: 5 de junio de 2021</p>
-                        <p class="precio">Hora: 11:00a.m - 1:00p.m</p>
-                        <a href="https://www.youtube.com/channel/UCbT3c1AE4cRiqK58CzA_dYQ" target="_blank" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                    </div>
-                </div>
-                <div id="anuncio">
-                    <div id="contenido-anuncio">
-                        <p>Diplomatura: Habilidades socio-emocionales del e-Mediador</p>
-                        <p class="precio">Matrículas: 19 de mayo al 3 de junio de 2021</p>
-                        <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                        <a href="" id="botones" class="boton boton-amarillo d-block">Ir a evento</a>
-                    </div>
-                </div> 
-            </div>
-            </div>
-          </div>
-      
-          <!-- Left and right controls -->
-          <div id="flechas">
-            <a id="carousel-control" class="left" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a id="carousel-control" class="right" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
         </div>
-      </div>
     </div>
     <div id="footer">
-      <footer>
-        <p>Agenda de Egresados, Copyright © 2021 Ichel Delgado Morales, Colombia.<br>e-Monitoria de Egresados. Zona Amazonia - Orinoquia.</p>
-    </footer>
+        <footer>
+            <p>Agenda de Egresados, Copyright © 2021 Ichel Delgado Morales, Colombia.<br>e-Monitoria de Egresados. Zona
+                Amazonia - Orinoquia.</p>
+        </footer>
     </div>
-    </body> 
+</body>
+
 </html>
