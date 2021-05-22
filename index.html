@@ -1,44 +1,62 @@
 <!DOCTYPE html>
-<html >
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AGENDA DE EGRESADOS</title>
-        <meta name="description" content="">
-        <link rel="shortcut icon" href="img/calendar.ico" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Noto+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="styles.css">
-        <script src="loadmore.js"></script>
-    </head>
-    <body id="contenedor">
-      <header>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AGENDA DE EGRESADOS</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/calendar.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Noto+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="contenedor">
+    <header>
         <div id="encabezado">
             <img src="img/logo" alt="Mountain View" id="img">
             <h1 id="h1">AGENDA DE EGRESADOS ZONA AMAZONIA - ORINOQUIA</h1>
         </div>
         <div id="navbar">
-            <a id="a" class="active" href="index.html">Inicio</a>
-            <a href="academicos.html">Eventos Académicos</a>
-            <a href="investigacion.html">Eventos de Investigación</a>
-            <a href="biblioteca.html">Eventos de Biblioteca</a>
+            <div class="navbar">
+                <a href="index.html">Inicio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Eventos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="academicos.html">Eventos Académicos</a>
+                        <a href="investigacion.html">Eventos de Investigación</a>
+                        <a href="biblioteca.html">Eventos de Biblioteca</a>
+                    </div>
+                </div>
+                <a href="https://view.genial.ly/609ff334dc85600d0b61dcd3" target="_blank">Eventos de Bienestar</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbaXSl-wCfIz0Eu3_QMq8b9sBrhtnc3tZWgJpn0uqe6zlKHw/viewform"
+                    target="_blank">Encuesta de Servicios</a>
+                    <a href="https://drive.google.com/file/d/1mnpitREDFdAM8HnUqgQGX1cySzKElWK6/view" target="_blank">Boletín Trimestral</a>
+            </div>
         </div>
-      </header>
+    </header>
     <div id="contenedor">
-    <div id="main">
-        <h3 id="titulo">Estimado egresado, te invitamos a participar en las diversas actividades que tendremos para ti durante este mes.</h3>
-        <div id="img-index">
-            <img src="img/egresados.jpeg" alt="Grupo de profesionales">
+        <div id="main">
+            <h3 id="titulo">Estos son los eventos académicos del mes de Junio.</h3>
+            <div id="img-index">
+                <img src="img/egresados.jpeg" alt="Grupo de profesionales">
+            </div>
+            <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
         </div>
-        <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
     </div>
-    <div id="footer-index">
-      <footer>
-        <p>Agenda de Egresados, Copyright © 2021 Ichel Delgado Morales, Colombia.<br>e-Monitoria de Egresados. Zona Amazonia - Orinoquia.</p>
-    </footer>
+    <div id="footer">
+        <footer>
+            <p>Agenda de Egresados, Copyright © 2021 Ichel Delgado Morales, Colombia.<br>e-Monitoria de Egresados. Zona
+                Amazonia - Orinoquia.</p>
+        </footer>
     </div>
-    </body> 
+</body>
+
 </html>
