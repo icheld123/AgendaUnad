@@ -26,19 +26,13 @@ html {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 2rem;
 	color: #1E222B;
-    margin-top: 6.5rem;
+    margin-top: 9rem;
 	line-height: 1;
 }
 header img {
-    width: 10rem;
-    height: 10rem;
+    max-width: 10rem;
+    max-height: 10rem;
     margin-top: 2rem;
-}
-header h1 {
-	font-family: 'Noto Sans', sans-serif;
-	font-size: 2rem;
-    margin-top: 8rem;
-	line-height: 1;
 }
 /* Barra de navegación */
 .navbar {
@@ -216,7 +210,7 @@ div.post{
 }
 #datos-contacto{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap:nowrap;
 }
 .nombre{
 	font-size: 1rem!important;
@@ -281,11 +275,22 @@ div.post{
 }
 
 /* ------------------------------------------MEDIA QUERIES----------------------------------------------------- */
-@media only screen and (max-width:1200px) {
-	h3,#hashtag {
+@media only screen and (max-width:600px) {
+	#texto-lider{
+		margin: 1rem auto -1rem;
+		padding: 1rem;
+		font-size: 1.3rem;
+	}
+	#hashtag {
 		margin-top: -1rem;
 		font-weight: 600;
-		font-size: 1rem;
+		font-size: 1.3rem;
+		color: #F8712E;
+	}
+	#titulo-monitores{
+		margin-top: -1rem;
+		font-weight: 600;
+		font-size: 1.3rem;
 		color: #F8712E;
 	}
 	#titulo {
@@ -302,10 +307,30 @@ div.post{
 		border-radius: 1rem;
 		margin: 1rem auto;
 	}
-	div.post,#post-contacto{
+	div.post #anuncio{
 		padding: 1rem;
 		margin: 1rem auto;
 		display: block;
+	}	
+	.post #post-contacto{
+		font-size: 1.5rem;
+		width: 40%;
+		padding: 1rem;
+		margin: 0.5rem auto;
+	}
+	#contenido-anuncio p{
+		margin-left: 0;
+		font-size: 1.1rem!important;
+	}
+	#datos-contacto{
+		margin-bottom: -1rem;
+		display: block;
+	}
+	#datos-contacto p{
+		margin-top: 0;
+	}
+	.post #post-contacto p{
+		font-size: 1rem;
 	}
 	#titulo-monitores{
 		margin-top: 1rem;
