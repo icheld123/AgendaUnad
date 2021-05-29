@@ -196,6 +196,11 @@ h3,#hashtag {
 	margin-top: 2rem;
 	margin-bottom: 0;
 }
+.contenedor-anuncio{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 #anuncio {
 	flex-basis: calc(33.3% - 4rem);
 	border: 1px solid #B3B6B7;
@@ -204,9 +209,7 @@ h3,#hashtag {
 	padding: 0.5rem;
 	margin: 2rem;
 }
-#contenido-anuncio #evento{
-	max-width: 20rem;
-}
+
 #post-contacto, .contenido-anuncio{
 	width: 30%;
 	height: 50%;
@@ -290,20 +293,23 @@ p.codigo-acceso{
 }
 
 /* ------------------------------------------MEDIA QUERIES----------------------------------------------------- */
-@media only screen and (max-width:70rem) {
+@media only screen and (max-width:90rem) {
 	#encabezado{
 		max-width: 92%;
 	}
 	#navbar{
 		margin-top: -1rem;
 	}
-	#hashtag{
-		margin-top: -1rem;
-	}
-	h3{
+	#titulo{
+		font-size: 0.7rem;
 		margin: 0;
 	}
+	#hashtag{
+		font-size: 0.7rem;
+		margin-top: -1rem;
+	}
 	h4{
+		font-size: 0.6rem;
 		margin: 1rem;
 	}
 	#comunicate img{
@@ -312,13 +318,16 @@ p.codigo-acceso{
 		margin: -2rem auto;
 	}
 	#anuncio {
-		font-size: 85%;
+		font-size: 80%;
 		border: 1px solid #B3B6B7;
 		border-radius: 1rem;
 		margin-bottom: 2rem;
 		padding: 1rem;
 		margin: 1rem;
 	}	
+	#botones .boton{
+		font-size: 0.8rem;
+	}
 	#post-contacto{
 		max-width: 100%;
 		padding: 0.5rem 4rem;
@@ -334,4 +343,7 @@ p.codigo-acceso{
 		margin-top: 0.5rem;
 		font-size: 1rem;
 	}	
+	#footer{
+		font-size: 0.7rem;
+	}
 }
