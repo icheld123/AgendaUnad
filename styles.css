@@ -196,25 +196,28 @@ h3,#hashtag {
 	margin-top: 2rem;
 	margin-bottom: 0;
 }
+.pagination{
+	width:90%;
+  	clear:both;
+	margin: 1rem auto;
+}
 #anuncio {
 	font-size: 100%;
-	max-width: 27%;
+	width: 27%;
 	border: 1px solid #B3B6B7;
 	border-radius: 1rem;
-	margin-bottom: 2rem;
+	margin: 1rem;
 	padding: 1rem;
+	display: table-cell;
 }
 #contenido-anuncio #evento{
 	max-width: 20rem;
 }
 div.post{
 	padding: 1rem;
-	margin: auto 2rem;
-	display: flex;
+	margin: 1rem;
+	display: table-row;
 	justify-content: space-between;
-}
-div.post>div{
-	flex: 1;
 }
 #post-contacto, .contenido-anuncio{
 	width: 30%;
@@ -321,13 +324,13 @@ p.codigo-acceso{
 		margin: -2rem auto;
 	}
 	div.post #anuncio{
-		font-size: 85%;
-		box-sizing: border-box;
-		max-width: 100%;
+		font-size: 90%;
+		width: 100%;
 		padding: 1rem;
 		margin: 1rem auto;
 		display: block;
-	}	
+		justify-content: space-between;
+	}
 	#post-contacto{
 		max-width: 100%;
 		padding: 0.5rem 4rem;
