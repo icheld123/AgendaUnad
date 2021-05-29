@@ -58,7 +58,7 @@ header img {
 }
 /* Botón dropdown */
 #boton-vermas{
-	color: #000000;
+	color: #A14F19;
 }
 #boton-vermas:hover{
 	cursor: pointer;
@@ -135,7 +135,7 @@ h3,h4{
 	text-align: center;
 }
 h4{
-	margin-top: -1rem;
+	margin: 1rem auto -0.5rem;
 }
 h3,#hashtag {
 	font-weight: 600;
@@ -212,7 +212,9 @@ div.post{
 	margin: auto 2rem;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+}
+div.post>div{
+	flex: 1;
 }
 #post-contacto, .contenido-anuncio{
 	width: 30%;
@@ -311,7 +313,7 @@ p.codigo-acceso{
 		margin: 0;
 	}
 	h4{
-		margin: 1rem;
+		margin: 1rem auto -1rem;
 	}
 	#comunicate img{
 		width: 25%;
@@ -319,13 +321,12 @@ p.codigo-acceso{
 		margin: -2rem auto;
 	}
 	div.post #anuncio{
-		font-size: 100%;
+		font-size: 85%;
 		box-sizing: border-box;
 		max-width: 100%;
 		padding: 1rem;
 		margin: 1rem auto;
 		display: block;
-		flex-wrap: nowrap;
 	}	
 	#post-contacto{
 		max-width: 100%;
