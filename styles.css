@@ -26,19 +26,13 @@ html {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 2rem;
 	color: #1E222B;
-    margin-top: 6.5rem;
+    margin-top: 9rem;
 	line-height: 1;
 }
 header img {
-    width: 10rem;
-    height: 10rem;
+    max-width: 10rem;
+    max-height: 10rem;
     margin-top: 2rem;
-}
-header h1 {
-	font-family: 'Noto Sans', sans-serif;
-	font-size: 2rem;
-    margin-top: 8rem;
-	line-height: 1;
 }
 /* Barra de navegación */
 .navbar {
@@ -51,28 +45,37 @@ header h1 {
 	font-weight: 700;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 1rem 0.5rem;
 	text-decoration: none;
 }
 /* Logo de whatsapp */
-.fa{
+#icono-w{
 	margin-top: 0.2rem;
 }
-.fa:hover{
+#icono-w:hover{
+	border-radius: 2.5rem;
 	background-color: #25D366!important;
 }
 /* Botón dropdown */
+#boton-vermas{
+	color: #000000;
+}
+#boton-vermas:hover{
+	cursor: pointer;
+	color: #F8712E;
+}
 .dropdown {
 	float: left;
 	overflow: hidden;
 }
 .dropdown .dropbtn {
+	cursor: pointer;
 	font-size: 1rem;
 	font-weight: 700; 
 	border: none;
 	outline: none;
 	color: white;
-	padding: 1rem;
+	padding: 1.1rem;
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
@@ -122,28 +125,35 @@ header h1 {
 }
 /* Titulo del body */
 #titulo {
-    font-size: 1.5rem;
+    font-size: 120%;
 	margin: 1rem;
 	padding: 1rem 2rem;
     color: #222;
     line-height: 1.3;
 }
-h3{
+h3,h4{
 	text-align: center;
 }
+h4{
+	margin-top: -1rem;
+}
 h3,#hashtag {
-	margin-top: 1rem;
 	font-weight: 600;
-	font-size: 1rem;
     color: #F8712E;
 }
 /* Img del body */
 #img-index img{
-	width: 40rem;
+	width: 50%;
 	display: block;
 	margin: 1rem auto 0;
 }
+#comunicate img{
+	width: 22%;
+	display: block;
+	margin: -2rem auto;
+}
 /* Botones de anuncios */
+
 #botones, .boton {
 	color: #ffffff;
 	text-decoration: none;
@@ -166,13 +176,36 @@ h3,#hashtag {
 	background-color: #FFB439;
 	border-radius: 1rem;
 }
+#via-evento img{
+	margin: 0.5rem auto -0.5rem;
+	max-width: 3rem;
+	display: inline-block;
+}
 /* Contenedor del anuncio */
+#titulo-monitores{
+	margin-top: -1.5rem;
+	margin-bottom: 0.5rem;
+	color: #F8712E;
+}
+#lider, #post-contacto{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+#texto-lider{
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
 #anuncio {
+	font-size: 100%;
 	max-width: 27%;
 	border: 1px solid #B3B6B7;
 	border-radius: 1rem;
 	margin-bottom: 2rem;
 	padding: 1rem;
+}
+#contenido-anuncio #evento{
+	max-width: 20rem;
 }
 div.post{
 	padding: 1rem;
@@ -180,6 +213,39 @@ div.post{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+#post-contacto, .contenido-anuncio{
+	width: 30%;
+	height: 50%;
+	border: 1px solid #B3B6B7;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+}
+#post-contacto p{
+	margin-left: 0.5rem;
+	font-size: 70%;
+}
+#datos-contacto{
+	display: flex;
+	flex-wrap:nowrap;
+}
+.nombre{
+	font-size: 1rem!important;
+	font-weight: 800;
+	color: #2274F2;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.zona{
+	font-size: 1rem!important;
+	font-weight: 800;
+	color: #F8712E;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#icono-contacto{
+	margin-top: 0.6rem;
 }
 /* Contenido de anuncios */
 #contenido-anuncio {
@@ -196,6 +262,10 @@ div.post{
 .fecha {
 	color: #2274F2;
 	font-weight: 700;
+}
+p.codigo-acceso{
+	color: #F8712E!important;
+	font-weight: 900!important;
 }
 .contenedor-anuncios {
 	display: flex;
@@ -227,48 +297,49 @@ div.post{
 }
 
 /* ------------------------------------------MEDIA QUERIES----------------------------------------------------- */
-@media only screen and (max-width:1200px) {
-	h3,#hashtag {
+@media only screen and (max-width:70rem) {
+	#encabezado{
+		max-width: 92%;
+	}
+	#navbar{
 		margin-top: -1rem;
-		font-weight: 600;
-		font-size: 0.7rem;
-		color: #F8712E;
 	}
-	#titulo {
-		font-size: 0.8rem;
+	#hashtag{
+		margin-top: -1rem;
+	}
+	h3{
+		margin: 0;
+	}
+	h4{
 		margin: 1rem;
-		padding: 1rem 2rem;
-		color: #222;
-		line-height: 1.3;
 	}
-	#anuncio {
-		font-size: 0.6rem;
-		max-width: 70%;
-		border: 0.2rem solid #B3B6B7;
-		border-radius: 1rem;
-		margin: 1rem auto;
-	}
-	div.post{
-		padding: 1rem;
-		margin: auto;
+	#comunicate img{
+		width: 25%;
 		display: block;
+		margin: -2rem auto;
 	}
-	#botones, .boton {
-		font-size: 1.2rem;
-		font-weight: 600;
-		padding: 0.5rem 1rem;
-	}
-	#paginacion a {
-		font-size: 1.3rem;
+	div.post #anuncio{
+		font-size: 100%;
+		box-sizing: border-box;
+		max-width: 100%;
+		padding: 1rem;
+		margin: 1rem auto;
+		display: block;
+		flex-wrap: nowrap;
 	}	
-	#paginacion {
-		margin-bottom: -2rem;
-	}
-	#footer{
-		font-size: 0.5rem;
-		margin-top: 1rem;
-		text-align: center;
-		font-weight: 800;
-		color: #000000;
-	}
+	#post-contacto{
+		max-width: 100%;
+		padding: 0.5rem 4rem;
+		margin: 1rem auto;
+		display: block;
+	}	
+	#datos-contacto{
+		margin-top: -0.5rem;
+		margin-left: -1.5rem;
+		font-size: 1.2rem;
+	}	
+	#datos-contacto p{
+		margin-top: 0.5rem;
+		font-size: 1rem;
+	}	
 }
