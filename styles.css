@@ -135,7 +135,7 @@ h3,h4{
 	text-align: center;
 }
 h4{
-	margin: 1rem auto -0.5rem;
+	margin-top: 1rem;
 }
 h3,#hashtag {
 	font-weight: 600;
@@ -196,28 +196,16 @@ h3,#hashtag {
 	margin-top: 2rem;
 	margin-bottom: 0;
 }
-.pagination{
-	width:90%;
-  	clear:both;
-	margin: 1rem auto;
-}
 #anuncio {
-	font-size: 100%;
-	width: 27%;
+	flex-basis: calc(33.3% - 4rem);
 	border: 1px solid #B3B6B7;
 	border-radius: 1rem;
-	margin: 1rem;
-	padding: 1rem;
-	display: table-cell;
+	background: #F8F9F9;
+	padding: 0.5rem;
+	margin: 2rem;
 }
 #contenido-anuncio #evento{
 	max-width: 20rem;
-}
-div.post{
-	padding: 1rem;
-	margin: 1rem;
-	display: table-row;
-	justify-content: space-between;
 }
 #post-contacto, .contenido-anuncio{
 	width: 30%;
@@ -316,21 +304,21 @@ p.codigo-acceso{
 		margin: 0;
 	}
 	h4{
-		margin: 1rem auto -1rem;
+		margin: 1rem;
 	}
 	#comunicate img{
 		width: 25%;
 		display: block;
 		margin: -2rem auto;
 	}
-	div.post #anuncio{
-		font-size: 90%;
-		width: 100%;
+	#anuncio {
+		font-size: 85%;
+		border: 1px solid #B3B6B7;
+		border-radius: 1rem;
+		margin-bottom: 2rem;
 		padding: 1rem;
-		margin: 1rem auto;
-		display: block;
-		justify-content: space-between;
-	}
+		margin: 1rem;
+	}	
 	#post-contacto{
 		max-width: 100%;
 		padding: 0.5rem 4rem;
