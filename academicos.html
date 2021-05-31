@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Noto+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize_reset.css">
     <link rel="stylesheet" href="styles.css">
     <script src="loadmore.js"></script>
 </head>
 
-<body id="contenedor">
+<body class="contenedor">
     <header>
         <div id="encabezado">
             <img src="img/logo" alt="Mountain View" id="img">
@@ -39,7 +40,7 @@
                     target="_blank">Encuesta de Servicios</a>
                 <a href="https://drive.google.com/file/d/1mnpitREDFdAM8HnUqgQGX1cySzKElWK6/view" target="_blank">Boletín Trimestral</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Ver más
+                    <button id="boton-vermas" class="dropbtn">Ver más
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -53,7 +54,7 @@
     </header>
     <div id="contenedor">
         <div id="main">
-            <h3 id="titulo">Estos son los eventos académicos del mes de Junio.</h3>
+            <h3>Estos son los eventos académicos del mes de Junio.</h3>
             <div id="paginacion">
                 <a href="#" class="boton boton-amarillo" id="prev">Anterior</a>
                 <a href="#" class="boton boton-amarillo" id="next">Siguiente</a>
@@ -99,10 +100,12 @@
                             <p>III Jornada De La Mascota Unadista ¿Es Mi Mascota Una Mascota?</p>
                             <p class="fecha">Fecha: 05 de junio de 2021</p>
                             <p class="fecha">Hora: 09:00 a.m</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYB8a2qDCJq3W0ZB0Io0xf71DtlfuKPsjHGXEoU9TLfofulQ/viewform"
+                            <div id="botones-evento">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYB8a2qDCJq3W0ZB0Io0xf71DtlfuKPsjHGXEoU9TLfofulQ/viewform"
                                 target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                            <div id="via-evento">
-                                <a href="https://unad-edu-co.zoom.us/meeting/register/tJIsduivrz8qH9wrYCcaZbO8Us7ldjd4l6b0" id="" target="_blank"><img src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                                <div id="via-evento">
+                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJIsduivrz8qH9wrYCcaZbO8Us7ldjd4l6b0" id="" target="_blank"><img src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -111,10 +114,12 @@
                             <p>Entendiendo el paradigma de la programación orientada a objetos en JAVA.</p>
                             <p class="fecha">Fecha: 10 de junio de 2021</p>
                             <p class="fecha">Hora: 07:00 p.m - 08:00 p.m</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScVOkf5LdP7EkiMQQJuyYgNlwyzXHYyVIJlqHLG2mFCt48yvQ/viewform"
+                            <div id="botones-evento">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVOkf5LdP7EkiMQQJuyYgNlwyzXHYyVIJlqHLG2mFCt48yvQ/viewform"
                                 target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                            <div id="via-evento">
-                                <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                                <div id="via-evento">
+                                    <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -123,10 +128,12 @@
                             <p>Filosofía más allá de la academia. Filosofía de la tecnología: los videojuegos como extensión de la existencia. Parte II Nicho de la esperanza</p>
                             <p class="fecha">Fecha: 12 de junio de 2021</p>
                             <p class="fecha">Hora: 11:00 a.m - 01:00 p.m</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYtqf_VtnzFsK-GkSNUa9Wl0ar5snfgwZfrFKGU6mQU6zHZg/viewform"
+                            <div id="botones-evento">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYtqf_VtnzFsK-GkSNUa9Wl0ar5snfgwZfrFKGU6mQU6zHZg/viewform"
                                 target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                            <div id="via-evento">
-                                <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                                <div id="via-evento">
+                                    <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -139,10 +146,12 @@
                             <p>Entendiendo el paradigma de la programación orientada a objetos en JAVA.</p>
                             <p class="fecha">Fecha: 17 de junio de 2021</p>
                             <p class="fecha">Hora: 08:00 p.m - 10:00 p.m</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYB8a2qDCJq3W0ZB0Io0xf71DtlfuKPsjHGXEoU9TLfofulQ/viewform"
+                            <div id="botones-evento">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYB8a2qDCJq3W0ZB0Io0xf71DtlfuKPsjHGXEoU9TLfofulQ/viewform"
                                 target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                            <div id="via-evento">
-                                <a href="https://unad-edu-co.zoom.us/meeting/register/tJIsduivrz8qH9wrYCcaZbO8Us7ldjd4l6b0" id="" target="_blank"><img src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                                <div id="via-evento">
+                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJIsduivrz8qH9wrYCcaZbO8Us7ldjd4l6b0" id="" target="_blank"><img src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,10 +170,12 @@
                             <p>Entendiendo el paradigma de la programación orientada a objetos en JAVA.</p>
                             <p class="fecha">Fecha: 24 de junio de 2021</p>
                             <p class="fecha">Hora: 08:00 p.m - 10:00 p.m</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScVOkf5LdP7EkiMQQJuyYgNlwyzXHYyVIJlqHLG2mFCt48yvQ/viewform"
+                            <div id="botones-evento">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVOkf5LdP7EkiMQQJuyYgNlwyzXHYyVIJlqHLG2mFCt48yvQ/viewform"
                                 target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                            <div id="via-evento">
-                                <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                                <div id="via-evento">
+                                    <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -189,12 +200,10 @@
             </div>
         </div>
     </div>
-    <h3 id="hashtag-interno"><i>#SigamosEnContacto.</i></h3>
-    <div id="footer">
-        <footer>
-            <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
-        </footer>
-    </div>
+    <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
+    <footer>
+        <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
+    </footer>
 </body>
 
 </html>

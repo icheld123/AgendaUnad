@@ -13,12 +13,12 @@
         rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="normalize_reset.css">
     <link rel="stylesheet" href="styles.css">
     <script src="loadmore.js"></script>
 </head>
 
-<body id="contenedor">
+<body class="contenedor">
     <header>
         <div id="encabezado">
             <img src="img/logo" alt="Mountain View" id="img">
@@ -42,7 +42,7 @@
                     target="_blank">Encuesta de Servicios</a>
                 <a href="https://drive.google.com/file/d/1mnpitREDFdAM8HnUqgQGX1cySzKElWK6/view" target="_blank">Boletín Trimestral</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Ver más
+                    <button id="boton-vermas" class="dropbtn">Ver más
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -56,7 +56,7 @@
     </header>
     <div id="contenedor">
         <div id="main">
-            <h3 id="titulo">Estos son los eventos de investigación del mes de Junio.</h3>
+            <h3>Estos son los eventos de investigación del mes de Junio.</h3>
             <div id="paginacion">
                 <a href="#" class="boton boton-amarillo" id="prev">Anterior</a>
                 <a href="#" class="boton boton-amarillo" id="next">Siguiente</a>
@@ -95,12 +95,10 @@
             </div>
         </div>
     </div>
-    <h3 id="hashtag-interno"><i>#SigamosEnContacto.</i></h3>
-    <div id="footer">
-        <footer>
-            <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
-        </footer>
-    </div>
+    <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
+    <footer>
+        <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
+    </footer>
 </body>
 
 </html>
