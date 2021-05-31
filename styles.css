@@ -313,7 +313,7 @@ p.codigo-acceso{
 
 /* ------------------------------------------MEDIA QUERIES----------------------------------------------------- */
 
-@media only screen and (max-width:90rem) {
+@media only screen and (max-width:70rem) {
 	#contenedor {
 		max-width: 95%;
 	}
