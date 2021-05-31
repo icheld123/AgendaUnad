@@ -33,6 +33,7 @@ header img {
     max-width: 10rem;
     max-height: 10rem;
     margin-top: 2rem;
+	margin-left: -1rem;
 }
 /* Barra de navegación */
 .navbar {
@@ -48,22 +49,7 @@ header img {
 	padding: 1rem 0.5rem;
 	text-decoration: none;
 }
-/* Logo de whatsapp */
-#icono-w{
-	margin-top: 0.2rem;
-}
-#icono-w:hover{
-	border-radius: 2.5rem;
-	background-color: #25D366!important;
-}
 /* Botón dropdown */
-#boton-vermas{
-	color: #A14F19;
-}
-#boton-vermas:hover{
-	cursor: pointer;
-	color: #F8712E;
-}
 .dropdown {
 	float: left;
 	overflow: hidden;
@@ -104,6 +90,13 @@ header img {
 }
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+#boton-vermas{
+	color: #A14F19;
+}
+#boton-vermas:hover{
+	cursor: pointer;
+	color: #F8712E;
 }
 /* Contenido de body */
 #main {
@@ -193,8 +186,13 @@ h3,#hashtag {
 	margin: auto;
 }
 #texto-lider{
+	color: black;
+	margin: 2rem;
 	margin-top: 2rem;
 	margin-bottom: 0;
+}
+#hashtag-interno{
+	color: #F8712E;
 }
 .contenedor-anuncio{
 	display: flex;
@@ -209,8 +207,48 @@ h3,#hashtag {
 	padding: 0.5rem;
 	margin: 2rem;
 }
+#botones-evento{
+	display: flex;
+	flex-wrap:nowrap;
+	margin: auto 16rem;
+}
+#via-evento{
+	margin-left: 1rem; 
+}
 
-#post-contacto, .contenido-anuncio{
+/* Contenido de anuncios */
+#contenido-anuncio {
+	text-align: center;
+}
+.contenido-anuncio h3 {
+	margin: 0;
+	word-spacing: -0.5rem;
+} 
+.contenido-anuncio p {
+	margin: 0;
+    font-weight: 700;
+}
+.fecha {
+	color: #2274F2;
+	font-weight: 700;
+}
+p.codigo-acceso{
+	color: #F8712E!important;
+	font-weight: 900!important;
+}
+.contenedor-anuncios {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/* Contennido de comunicación */
+#contacto{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto 2rem;
+}
+#post-contacto{
 	width: 30%;
 	height: 50%;
 	border: 1px solid #B3B6B7;
@@ -243,31 +281,6 @@ h3,#hashtag {
 #icono-contacto{
 	margin-top: 0.6rem;
 }
-/* Contenido de anuncios */
-#contenido-anuncio {
-	text-align: center;
-}
-.contenido-anuncio h3 {
-	margin: 0;
-	word-spacing: -0.5rem;
-} 
-.contenido-anuncio p {
-	margin: 0;
-    font-weight: 700;
-}
-.fecha {
-	color: #2274F2;
-	font-weight: 700;
-}
-p.codigo-acceso{
-	color: #F8712E!important;
-	font-weight: 900!important;
-}
-.contenedor-anuncios {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
 /* Paginación de los anuncios */
 #paginacion {
 	text-align: center;
@@ -294,19 +307,50 @@ p.codigo-acceso{
 
 /* ------------------------------------------MEDIA QUERIES----------------------------------------------------- */
 @media only screen and (max-width:90rem) {
+	#contenedor {
+		max-width: 95%;
+	}
 	#encabezado{
-		max-width: 92%;
+		width: 93.2%;
 	}
-	#navbar{
-		margin-top: -1rem;
+	.navbar{
+		margin-top: -0.5rem;
 	}
-	#titulo{
+	.navbar a {
+		font-size: 1.2rem;
+		font-weight: 700;
+		padding: 0.5rem;
+	}
+	.dropdown .dropbtn {
+		margin-top: -0.5rem;
+		font-size: 1.2rem;
+	}
+	.dropdown .dropbtn a {
+		margin-top: -0.5rem;
+	}
+	.navbar a:hover, .dropdown:hover .dropbtn {
+		background-color: #FFB439;
+		color: black;
+	}
+	h3#titulo{
 		font-size: 0.7rem;
 		margin: 0;
 	}
+	#index-titulo{
+		font-size: 2rem!important;
+		color: #000000;
+	}
+	.index-sub{
+		font-size: 1.5rem!important;	
+	}
 	#hashtag{
-		font-size: 0.7rem;
+		font-size: 2rem!important;
 		margin-top: -1rem;
+	}
+	#hashtag-interno{
+		font-size: 1rem!important;
+		margin-top: -1rem;
+		color: #F8712E;
 	}
 	h4{
 		font-size: 0.6rem;
@@ -318,7 +362,7 @@ p.codigo-acceso{
 		margin: -2rem auto;
 	}
 	#anuncio {
-		font-size: 80%;
+		font-size: 75%;
 		border: 1px solid #B3B6B7;
 		border-radius: 1rem;
 		margin-bottom: 2rem;
@@ -327,6 +371,18 @@ p.codigo-acceso{
 	}	
 	#botones .boton{
 		font-size: 0.8rem;
+	}
+	#botones-evento{
+		display: flex;
+		flex-wrap:nowrap;
+		margin: auto 19rem;
+	}
+	#via-evento{
+		margin-left: 1rem; 
+	}
+	#texto-lider{
+		font-size: 100%;
+		color: #000000;
 	}
 	#post-contacto{
 		max-width: 100%;
@@ -343,7 +399,18 @@ p.codigo-acceso{
 		margin-top: 0.5rem;
 		font-size: 1rem;
 	}	
+	#titulo-monitores{
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
 	#footer{
 		font-size: 0.7rem;
+	}
+	#footer-index{
+		margin-top: 1rem;
+		text-align: center;
+		font-weight: 800;
+		color: #000000;
+		font-size: 2rem!important;
 	}
 }
