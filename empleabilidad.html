@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="normalize_reset.css">
-    <link rel="stylesheet" type="text/css"href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="loadmore.js"></script>
 </head>
 
 <body class="contenedor">
@@ -55,15 +56,37 @@
     </header>
     <div id="contenedor">
         <div id="main">
-            <h4 class="index-sub">¡Actívate y aprovecha de los espacios de formación que hemos dispuesto para ti!</h4>
-            <div id="img-index">
-                <img src="img/egresados.png" alt="Grupo de profesionales">
+            <h3>Estos son los eventos de investigación del mes de Junio.</h3>
+            <div id="paginacion">
+                <a href="#" class="boton boton-amarillo" id="prev">Anterior</a>
+                <a href="#" class="boton boton-amarillo" id="next">Siguiente</a>
             </div>
-            <a href="comunicate.html" id="comunicate" target="_blank">
-                <img src="img/comunicate1.png" alt="Clic para comunicarte con e-monitores"/>
-            </a>
+            <h4>¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
+            <div class="pagination" id="contenedor-anuncios">
+                <div class="post" id="page1">
+                    <div id="anuncio">
+                        <div id="contenido-anuncio">
+                            <div class="banner">
+                                <img src="img/bannerempleabilidad.jpeg" alt="Evento via zoom"/>
+                            </div>
+                            <p>Taller de orientación ocupacional sobre: Habilidades sociales y resolución de conflictos en ambientes laborales.</p>
+                            <p class="fecha">Fecha: 10 de junio de 2021</p>
+                            <p class="fecha">Hora: 06:00 p.m</p>
+                            <div id="botones-evento">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScvbTxrJ-5XX0Jtd2UzoPQgBYVPUHNf7SKZyCmwJdIEucQRsA/viewform"
+                                    target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                                <div id="via-evento">
+                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJMofuutpzIrHdO6OILT7pB9xe2XhWjp8Upn%7D" id="" target="_blank"><img
+                                            src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <h3 id="hashtag"><i>#SigamosEnContacto.</i></h3>
     <footer>
         <p>Agenda de Egresados. <br>Copyright © 2021. e-Monitoria de Egresados.</p>
     </footer>

@@ -97,6 +97,10 @@ html {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+#jueves{
+	color: #336BFF!important;
+}
+
 /* Contenido de body */
 #main {
 	background: #fff;
@@ -140,9 +144,9 @@ h4{
 	margin: 1rem auto 0;
 }
 #comunicate img{
-	width: 22%;
-	display: block;
+	max-width: 30%;
 	margin: -2rem auto;
+	display: block;
 }
 /* Botones de anuncios */
 #botones, .boton {
@@ -203,6 +207,10 @@ h4{
 	background: #F5F9FF;
 	padding: 0.5rem;
 	margin: 2rem;
+}
+.banner img{
+	max-width: 100%;
+	border-radius: 1rem;
 }
 #contacto{
 	display: flex;
